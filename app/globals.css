@@ -1,0 +1,98 @@
+:root {
+  --bg: #f4f7f6;
+  --surface: #ffffff;
+  --text: #152023;
+  --muted: #60767a;
+  --accent: #0c7a6d;
+  --accent-soft: #dbf1ee;
+  --border: #d7e3e1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 12% 4%, #cde9e6 0%, transparent 33%),
+    radial-gradient(circle at 90% 0%, #dbeaf8 0%, transparent 28%),
+    linear-gradient(180deg, #eff6f8 0%, #f8fbfd 42%, #ffffff 100%);
+}
+
+main {
+  width: min(980px, 92vw);
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 0.2rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.stack {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.hero {
+  padding: 1.4rem;
+}
+
+.grid-2,
+.grid-3 {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+}
+
+.ad-placeholder {
+  border-style: dashed;
+  background: #fbfefd;
+}
+
+.ad-slot-label {
+  margin: 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+.affiliate-block {
+  background: linear-gradient(180deg, #ffffff 0%, #f2faf8 100%);
+}
